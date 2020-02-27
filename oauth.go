@@ -32,10 +32,10 @@ var Permissions = struct {
 	Write            Permission
 	WriteViewPrivate Permission
 }{
-	"public",
-	"view_private",
-	"write",
-	"write,view_private",
+	"read,activity:read",
+	"read_all,profile:read_all,activity:read_all",
+	"activity:write",
+	"profile:write",
 }
 
 // AuthorizationResponse is returned as a result of the token exchange
