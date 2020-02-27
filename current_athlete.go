@@ -107,12 +107,12 @@ func (s *CurrentAthleteService) ListActivities() *CurrentAthleteListActivitiesCa
 	}
 }
 
-func (c *CurrentAthleteListActivitiesCall) Before(before int) *CurrentAthleteListActivitiesCall {
+func (c *CurrentAthleteListActivitiesCall) Before(before int64) *CurrentAthleteListActivitiesCall {
 	c.ops["before"] = before
 	return c
 }
 
-func (c *CurrentAthleteListActivitiesCall) After(after int) *CurrentAthleteListActivitiesCall {
+func (c *CurrentAthleteListActivitiesCall) After(after int64) *CurrentAthleteListActivitiesCall {
 	c.ops["after"] = after
 	return c
 }
